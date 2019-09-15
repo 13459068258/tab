@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+ul li {
+    list-style: none;
+}
+.gui-tab-main {
+    width:400px;
+    height:300px;
+    background-color: antiquewhite;
+}
+.gui-tab-title {
+    position:absolute;
+    background-color: aqua;
+    width: 400px;
+    height: 50px;
+}
+.gui-tab-title ul li {
+    float: left;
+    width: 78px;
+    height: 50px;
+    padding: 0 1px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer
+}
+.gui-tab-title ul li.selected {
+    border-bottom: 2px solid blue;
+}
+.gui-tab-content {
+    position:absolute;
+    top:50px;  
+    height: 300px;  
+}
+.gui-tab-content ul {
+    height:100%;
+}
+.gui-tab-content ul li {
+    height: calc(100% - 50px);
+    display: none;
+}
+.gui-tab-content ul li.selected {
+    display: block
+}
