@@ -9,7 +9,7 @@
             return ;
         }        
         for(var i=0,len=titles.length;i<len;i++){
-            // 给所有的标题加上一个id;这个很重要！后面的contents的功能需要用到
+            // 给所有的标题加上一个id;这个很重要！ 后面的contents的功能需要用到
             titles[i].id = i;
             titles[i].onmouseover = function(){
                 //清除titles和contents所有的名为selected的class
